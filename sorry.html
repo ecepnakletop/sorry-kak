@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>permintaan maaf</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fff6e0, #ffe4c4);
+      overflow-y: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 30px 40px;
+      max-width: 750px;
+      width: 100%;
+      text-align: justify;
+      position: relative;
+      border: 4px dashed #ffcf5c;
+      animation: fadeIn 2s ease;
+    }
+
+    .emoji-border {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+    }
+
+    .emoji-top-left { top: -25px; left: -25px; background-image: url('https://cdn-icons-png.flaticon.com/128/742/742751.png'); }
+    .emoji-top-right { top: -25px; right: -25px; background-image: url('https://cdn-icons-png.flaticon.com/128/742/742927.png'); }
+    .emoji-bottom-left { bottom: -25px; left: -25px; background-image: url('https://cdn-icons-png.flaticon.com/128/742/742753.png'); }
+    .emoji-bottom-right { bottom: -25px; right: -25px; background-image: url('https://cdn-icons-png.flaticon.com/128/742/742865.png'); }
+
+    h1 {
+      text-align: center;
+      color: #f78e69;
+      margin-bottom: 20px;
+      text-transform: lowercase;
+      font-size: 28px;
+      border-right: .15em solid #ffcb6b;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards, blink .75s step-end infinite;
+    }
+
+    .content {
+      opacity: 0;
+      animation: appearText 2s ease forwards;
+      animation-delay: 3.2s;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #333;
+      text-transform: lowercase;
+      margin-bottom: 15px;
+    }
+
+    .button-area {
+      text-align: center;
+      margin-top: 30px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 4s;
+    }
+
+    button {
+      background-color: #ffcb6b;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #ffd70088;
+    }
+
+    button:hover {
+      background-color: #ffc04d;
+      transform: scale(1.07);
+      box-shadow: 0 0 15px #ffc107aa;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transform: scale(0.8);
+      animation: popupShow 0.5s forwards;
+    }
+
+    .popup-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .popup-content button {
+      margin: 0 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #ffcb6b; }
+    }
+
+    @keyframes appearText {
+      to { opacity: 1; }
+    }
+
+    @keyframes popupShow {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="emoji-border emoji-top-left"></div>
+      <div class="emoji-border emoji-top-right"></div>
+      <div class="emoji-border emoji-bottom-left"></div>
+      <div class="emoji-border emoji-bottom-right"></div>
+
+      <h1>miaw, hehe</h1>
+
+      <div class="content">
+        <p>kak okta/lin, aku ingin dengan tulus meminta maaf atas kesalahan besar yang aku lakukan kak… aku sadar sepenuhnya bahwa memanggilmu dengan kata “kirik” adalah sesuatu yang sangat tidak pantas, kasar, dan menyakitkan. aku benar-benar menyesal karena telah berkata seperti itu dan nggak berpikir panjang sebelum berbicara.</p>
+        <p>kata-kata itu cuma sebagai kalimat candaan doang kak, aku ngga pernah bermaksud untuk merendahkanmu, apalagi sampai bikin kamu ngerasa sakit hati… tapi aku juga sadar sepenuhnya bahwa niat baik nggak pernah cukup kalau akhirnya tetap menyakitimu. </p>
+        <p>aku tahu aku bukan orang yang baik. aku sering banget bikin kesalahan ke kamu, dan mungkin kamu udah capek banget, muak banget sama aku. aku tahu itu... dan aku paham kalau kamu butuh waktu.</p>
+        <p>after all of this, i realized that i really don't deserve to be forgiven by anyone. i’ve made so many faults, so many mistakes that keep repeating, and it hurts me too, knowing i’ve hurt you.</p>
+        <p>sekali lagi, aku memohon maaf yang sebesar-besarnya ya kak… permintaan maaf ini aku tulis khusus buat kamu. aku cuma pengen kamu tahu bahwa aku bener-bener nyesel kak...</p>
+
+        <div class="button-area">
+          <button onclick="showPopup()">dibaca kan kak?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>dimaafin ngga?</h2>
+      <button onclick="alert('makasih kak! janji bakal berubah :)'); closePopup()">iya</button>
+      <button onclick="redirectToGoogle()">ngga dulu deh</button>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function redirectToGoogle() {
+      window.location.href = "https://www.google.com/search?q=oke+kak+%3A%29%29";
+    }
+  </script>
+</body>
+</html>
